@@ -1,4 +1,9 @@
-<style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Penguin</title>
+  <style>
     :root {
       --penguin-size: 300px;
       --penguin-skin: gray;
@@ -8,11 +13,8 @@
   
     @media (max-width: 350px) {
       :root {
-        /* Only change code below this line */
         --penguin-size: 200px;
         --penguin-skin: black;
-  
-        /* Only change code above this line */
       }
     }
   
@@ -87,19 +89,11 @@
     }
   
     @keyframes wave {
-        10% {
-          transform: rotate(110deg);
-        }
-        20% {
-          transform: rotate(130deg);
-        }
-        30% {
-          transform: rotate(110deg);
-        }
-        40% {
-          transform: rotate(130deg);
-        }
-      }
+      10% { transform: rotate(110deg); }
+      20% { transform: rotate(130deg); }
+      30% { transform: rotate(110deg); }
+      40% { transform: rotate(130deg); }
+    }
   
     .left-hand {
       top: 0%;
@@ -198,13 +192,18 @@
     }
   
     body {
-      background:#c6faf1;
+      background: #c6faf1;
+      margin: 0;
+      padding: 0;
     }
   
     .penguin * {
       position: absolute;
     }
   </style>
+</head>
+
+<body>
   <div class="penguin">
     <div class="penguin-bottom">
       <div class="right-hand"></div>
@@ -228,3 +227,5 @@
       <div class="beak-bottom"></div>
     </div>
   </div>
+</body>
+</html>
